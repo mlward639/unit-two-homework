@@ -1,1 +1,114 @@
-/* insert */
+/* Borders of main sections to remove later */
+
+#about-me section {
+    border-style: solid darkblue 20px;
+
+}
+
+body {
+    line-height: 1.2;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 20px;
+    background-color: rgb(233, 233, 233);
+    }
+
+
+
+header {
+    margin-top: 25px;
+    background-color: rgb(233, 233, 233);
+}
+
+.logo {
+    float: left;
+    height: auto;
+    width: 10vh;
+    border: 2px solid black;
+}
+
+header h1 {
+    display: inline-block;
+    font-size: 32px;
+    margin-left: 3vh;
+}
+
+header p {
+    display: block;
+    text-align: left;
+    font-size: 16px;
+    margin-left: 19vh;
+}
+
+
+header nav {
+/* how to move it up higher? */
+    margin-top: -20px;
+    margin-right: 20px;
+    float: right;
+    font-size: 20px;
+    background-color: rgb(233, 233, 233);
+}
+
+
+
+header nav ul {
+    list-style-type: none;
+}
+
+header nav li {
+    display: inline-block;
+    border-bottom: solid;
+    margin-left: 25px;
+}
+
+
+
+.brief-open h2 {
+    display: block;
+    text-align: center;
+    margin-top: 60px;
+    margin-bottom: 20px;
+    font-size: 20px;
+    background-color: rgb(233, 233, 233);
+}
+
+#about-me {
+    color: white;
+    background-color: black;
+    height: 17em;
+}
+
+#about-me img {
+    float: right;
+    width: 12em;
+    height: auto;
+    padding-right: 4em;
+    padding-top: 2.5em;
+}
+
+.left-title {
+    padding-left: 4em;
+    padding-top: 2.5em;
+    border-right: white; /* not working */
+    height: 17em;
+    display: inline-flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+}
+
+.right-content {
+    padding-left: 2em;
+    display: inline-flex;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    width: 50%;
+    height: 17em;
+/* how to get it diff height than left-content... it is lining up with left title for some reason */
+}
+
+#previous-work {
+    color: white;
+    background-color: rgb(37, 37, 37);
+}
