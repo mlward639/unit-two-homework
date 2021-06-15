@@ -31,7 +31,7 @@ header {
     background-color: rgb(37, 37, 37);
     color: white;
     height: 6em;
-    grid-area: header;
+
 }
 
 .logo {
@@ -86,7 +86,7 @@ header nav li {
     margin-bottom: 20px;
     font-size: 20px;
     background-color: rgb(233, 233, 233);
-    grid-area: subhead;
+
 }
 
 /* About me section */
@@ -95,7 +95,7 @@ header nav li {
     background-color: rgb(233, 233, 233);
     height: 10em;
     border: 2px solid orange;
-    grid-area: menu;
+    display: block
 }
 
 /* profile picture in About Me section */
@@ -109,7 +109,7 @@ header nav li {
 }
 
 /* About Me title to left */
-.left-title {
+aside .left-title {
     padding-left: 3em;
     padding-top: 2em;
     padding-right: 0.5em;
@@ -143,11 +143,11 @@ header nav li {
     background-color: rgb(233, 233, 233);
     height: 10em;
     border: 5px solid orange;
-    grid-area: main; 
+    display: block;
 }
 
 /* like left-title above */
-#previous-work h2 {
+#previous-work aside h2 {
     padding-left: 3em;
     padding-top: 2em;
     padding-right: 0.5em;
@@ -253,10 +253,10 @@ footer {
     width: 209vh;
     line-height: 1.2;
     border: 1px solid orange;
-    grid-area: footer; 
+    display: block;
 }
 
-#contact-me h2 {
+#contact-me aside h2 {
     padding-left: 3em;
     padding-top: 2em;
     padding-right: 0.5em;
@@ -273,7 +273,7 @@ footer {
 
 }
 
-#contact-me ul {
+#contact-me main ul {
     list-style-type: none;
     padding-left: 2em;
     display: inline-flex;
@@ -285,7 +285,7 @@ footer {
     border: 2px solid teal;
 }
 
-#contact-me li {
+#contact-me main ul li {
     display: inline-block;
     margin-right: 25px;
 }
