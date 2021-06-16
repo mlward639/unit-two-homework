@@ -22,7 +22,7 @@ header {
 .logo {
     float: left;
     height: auto;
-    width: 10vh;
+    width: 10vh; /* CONVERT */
     border: 2px solid var(--black);
     margin-top: 1em;
     margin-left: 1em;
@@ -31,7 +31,7 @@ header {
 header h1 {
     display: inline-block;
     font-size: 32px; 
-    margin-left: 3vh;
+    margin-left: 3vh; /* CONVERT */
     margin-top: 20px;
 }
 
@@ -39,11 +39,12 @@ header p {
     display: block;
     text-align: left;
     font-size: 16px;
-    margin-left: 19vh;
+    margin-left: 19vh; /* CONVERT */
 }
 
 /* Nav bar in header */
 header nav {
+/* how to move it up higher? */
     margin-top: -20px;
     margin-right: 80px;
     float: right;
@@ -77,6 +78,7 @@ header nav li {
     color: black;
     background-color: var(--lightgray);
     height: 170px;
+    border: 2px solid orange;
     display: block;
     position: relative;
 }
@@ -113,6 +115,7 @@ header nav li {
     width: 50%;
     height: 160px;
     font-size: 16px;
+    border: 2px solid red;
 }
 
 
@@ -121,6 +124,7 @@ header nav li {
     color: black;
     background-color: var(--lightgray);
     height: 1050px;
+    border: 5px solid orange;
     display: block;
     margin-top: 20px;
     position: relative;
@@ -129,7 +133,7 @@ header nav li {
 /* Previous Work title to the left */
 .left-title-2 {
     width: 120.4px;
-    height: 1020px;
+    height: 1000px;
     position: absolute;
     top: 14px;
     left: 84px;
@@ -144,16 +148,17 @@ header nav li {
 .main-work-example {
     padding-left: 32px;
     padding-right: 32px;
-    padding-top: 20px;
     position: absolute;
     left: 208px;
     width: 990px;
     height: 400px;
     font-size: 16px;
+    border: 2px solid red;
 }
 
 .main-work-example img {
     box-sizing: border-box;
+    border: 5px solid yellow;
     width: 900px;
     height: 400px;
     margin-left: 50px;
@@ -178,26 +183,28 @@ header nav li {
 /* Minor Works images with descriptions in 2 x 2 grid */
 .minor-work-examples {
     display: grid;
-    grid-template-columns: repeat(2, 75vh);  
+    grid-template-columns: repeat(2, 75vh); /* CONVERT */
     grid-template-rows: auto;
     gap: 1px;
-    margin-left: 212px;
-    margin-top: 20px;
-    width: 990px;
+    margin-left: 208px;
+    margin-top: 420px;
+    width: 1055px;
+    border: 2px solid red;
 }
 
 
 .minor-work-examples section {
+    border: 2px solid blue;
     width: 430px;
     height: auto;
     position: relative;
-    margin-left: 77px;
+    margin-left: 75px;
     margin-bottom: 20px;
-    top: 440px;
 }
 
 .minor-work-examples section div img {
     box-sizing: border-box;
+    border: 5px solid yellow;
     width: 430px;
     height: auto;
 }
@@ -226,8 +233,9 @@ header nav li {
     background-color: var(--lightgray);
     color: var(--black);
     height: 150px;
-    width: 990px;
+    width: 1500px;
     line-height: 1.2;
+    border: 1px solid orange;
     display: block;
     position: relative;
 }
@@ -246,13 +254,16 @@ header nav li {
 
 #contact-me main ul {
     list-style-type: none;
+    padding-left: 32px;
     position: absolute;
     left: 208px;
     top: 50px;
-    width: 990px;
+    width: 1030px;
     height: 60px;
     font-size: 20px;
+    border: 2px solid teal;
     padding-left: 160px;
+
 }
 
 #contact-me main ul li {
@@ -277,12 +288,13 @@ footer {
     header nav {
         margin-top: 28px;
         padding-right: 0px;
+        border: 2px solid green;
         position: absolute;
         left: 0;
     }
     header nav li {
         display: block;
-        background-color: rgb(70, 22, 94);
+        background-color: red;
         width: 375px;
         text-align: center;
         float: center;
@@ -291,13 +303,15 @@ footer {
 
     .brief-open {
         display: block;
-        margin-top: 85px;
+        margin-top: 70px;
         text-align: left;
+        border: 2px solid green;
     }
  
     /* About Me section */
     #about-me {
         height: 170px;
+        border: 2px solid orange;
         display: block;
         position: relative;
         }
@@ -328,7 +342,6 @@ footer {
 
     #previous-work {
         height: 675px; /*might change*/
-        margin-top: 0;
     }
     
     /* Previous Work title to the left */
@@ -336,6 +349,7 @@ footer {
         display: block;
         font-size: 20px;
         height: 660px;
+        margin-top: -10px;
     }
 
     /* Main Work image with description */
@@ -364,7 +378,7 @@ footer {
     
     /* Minor Works images with descriptions in 2 x 2 grid */
     .minor-work-examples {
-        margin-top: 10px;
+        margin-top: 320px;
         width: 540px;
         grid-template-columns: repeat(2, auto); 
         gap: 0;
@@ -397,7 +411,7 @@ footer {
     /* Contact Me section */
     #contact-me {
         margin-top: 15px;
-        height: 150px;  
+        height: 150px; /*change */
         width: 750px;
     }
 
@@ -438,7 +452,7 @@ footer {
 @media screen and (max-width: 768px) {
     /* Nav bar */
     header nav li {
-        background-color: rgb(101, 34, 134);
+        background-color: green;
     }
 
     .break {
@@ -559,7 +573,7 @@ footer {
         padding: 0px;
         border: none;
         }
-
+        
     #contact-me main ul {
         padding-left: 0px;
         left: 125px;  
@@ -573,7 +587,7 @@ footer {
     }
 
     /* Footer */
-    footer { 
+    footer { *here
         text-align: center;
         font-size: 16px;
         margin-top: 10px;
