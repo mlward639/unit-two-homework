@@ -28,6 +28,7 @@ header {
     margin-left: 1em;
 }
 
+/* Name */
 header h1 {
     display: inline-block;
     font-size: 32px; 
@@ -35,6 +36,7 @@ header h1 {
     margin-top: 20px;
 }
 
+/* Title */
 header p {
     display: block;
     text-align: left;
@@ -48,8 +50,8 @@ header nav {
     margin-right: 80px;
     float: right;
     font-size: 20px;
-    background-color: var(--darkgray)
     color: var(--white);
+    background-color: var(--darkgray);
 }
 
 header nav ul {
@@ -186,7 +188,6 @@ header nav li {
     width: 990px;
 }
 
-
 .minor-work-examples section {
     width: 430px;
     height: auto;
@@ -201,7 +202,6 @@ header nav li {
     width: 430px;
     height: auto;
 }
-
 
 .app-description {
     position: absolute;
@@ -232,6 +232,7 @@ header nav li {
     position: relative;
 }
 
+/* Contact Me title to the left */
 #contact-me aside p {
     padding-left: 84px;
     padding-top: 40px;
@@ -244,6 +245,7 @@ header nav li {
     font-weight: bold;
 }
 
+/* list of contact options */
 #contact-me main ul {
     list-style-type: none;
     position: absolute;
@@ -268,30 +270,39 @@ footer {
     margin-bottom: 15px;
 }
 
-/* On tablet at size 768px and above, display two CSS code snippets per row */
+/* On tablet at size 768px and above */
 @media screen and (max-width: 992px) {
     /* Header-Nav bar */ 
     header {
         position: relative;
     }
+
     header nav {
         margin-top: 28px;
         padding-right: 0px;
         position: absolute;
         left: 0;
     }
+
     header nav li {
         display: block;
-        background-color: rgb(70, 22, 94);
-        width: 375px;
-        text-align: center;
-        float: center;
+        background-color: rgba(128, 0, 128, 0.301);
+        width: 130px;
+        text-align: left;
         margin-left: 0px;
+        padding: 4px;
+        padding-left: 25px;
+        font-size: 18px;
     }
 
+    header nav li ul {
+        color: white;
+    }
+
+    /* brief opening statement */
     .brief-open {
         display: block;
-        margin-top: 85px;
+        margin-top: 100px;
         text-align: left;
     }
  
@@ -326,8 +337,9 @@ footer {
         width: 67%;
     }
 
+    /* Previous Work Section */
     #previous-work {
-        height: 675px; /*might change*/
+        height: 675px;  
         margin-top: 0;
     }
     
@@ -338,7 +350,7 @@ footer {
         height: 660px;
     }
 
-    /* Main Work image with description */
+    /* Main Work section incl image and descriptions */
     .main-work-example {
         width: 480px;
         height: 300px;
@@ -362,7 +374,7 @@ footer {
         font-size: 18px;
     }
     
-    /* Minor Works images with descriptions in 2 x 2 grid */
+    /* Minor Works sections incl images with descriptions in 2 x 2 grid */
     .minor-work-examples {
         margin-top: 10px;
         width: 540px;
@@ -374,6 +386,7 @@ footer {
         width: 237px;
         margin-left: 25px;
         margin-bottom: 10px;
+        top: 335px;
     }
     
     .minor-work-examples section div img {
@@ -387,7 +400,7 @@ footer {
         font-size: 12px;
         line-height: 1;
         width: 160px;
-        }
+    }
     
     .app-description h3 {
         font-size: 16px;
@@ -401,12 +414,14 @@ footer {
         width: 750px;
     }
 
+    /* Contact Me title to left */
     #contact-me aside p {
         display: block;
         font-size: 20px;
         padding-top: 60px;
     }
 
+    /* list contact options */
     #contact-me main ul {
         padding-left: 38px;
         left: 200px;  
@@ -429,16 +444,11 @@ footer {
 }
 
 
- 
-
-
-
-
-/* On mobile device, under 768px, display one CSS code snippet per row */
+/* On mobile device, under 768px */
 @media screen and (max-width: 768px) {
     /* Nav bar */
     header nav li {
-        background-color: rgb(101, 34, 134);
+        background-color: rgba(128, 0, 128, 0.541);
     }
 
     .break {
@@ -447,7 +457,7 @@ footer {
     
     /* About Me title to left */
     .left-title {
-        width: 45px;
+        width: 43px;
         left: 20px;
         border: none;
         margin-top: -15px;
@@ -457,7 +467,7 @@ footer {
     #about-me img {
         margin-left: 13px;
         margin-top: 70px;
-        }
+    }
 
     /* Description about me */
     .right-content {
@@ -470,7 +480,7 @@ footer {
 
     /* Previous Work */
     #previous-work {
-        height: 550px;
+        height: 320px;
     }
 
     /* Decrease size of Previous Work title to the left */
@@ -480,13 +490,16 @@ footer {
         left: 5px;
         border-right: 2px solid black;
         margin-top: -15px;
+        top: -220px;
     }
+
     /* Decrease size of Main Work image with description */
     .main-work-example {
         width: 320px;
         height: 250px;
         font-size: 12px;
         left: 120px;
+        top: -250px;
     }
 
     .main-work-example img {
@@ -515,8 +528,9 @@ footer {
 
     .minor-work-examples section {
         width: 185px;
-        margin-left: 0;
+        margin-left: 2px;
         margin-bottom: 10px;
+        top: 30px;
     }
     
     .minor-work-examples section div img {
@@ -532,7 +546,7 @@ footer {
         width: 160px;
         padding: 1px;
         line-height: 14px;
-        }
+    }
     
     .app-description h3 {
         font-size: 14px;
@@ -540,26 +554,27 @@ footer {
     }
 
     /* Contact Me section */
-
     #contact-me {
         height: 65px;
     }
 
     #contact-me aside {
         height: 60px;
-        width: 107px;
+        width: 104px;
         border-right: 2px solid black;
         margin-left: 10px; 
-        }
+    }
 
+    /* Contact me title to left */
     #contact-me aside p {
         font-size: 20px;
         height: 60px;
         width: 90px;
         padding: 0px;
         border: none;
-        }
+    }
 
+    /* list of contact options */
     #contact-me main ul {
         padding-left: 0px;
         left: 125px;  
@@ -579,4 +594,4 @@ footer {
         margin-top: 10px;
         margin-bottom: 5px;
     }
-    }
+}

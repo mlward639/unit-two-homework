@@ -5,7 +5,21 @@ Portfolio webpage built from scratch, modeled after Unit 2 Homework example GIF.
 
 ## Screenshot:
 Wireframe:
-<img src="./assets/wireframe.png">
+
+<img src="./assets/wireframe.png" alt="wireframe screenshot">  
+
+Deployed website:
+
+<img src="assets\Screenshot-deployed-website.png" alt="deployed website screenshot">
+
+Deployed website, tablet view:
+
+<img src="assets\Screenshot-deployed-website-tablet view.png" alt="deployed website with tablet view">  
+
+
+Deployed website, mobile view:
+
+<img src="assets\Screenshot-deployed-website-mobile view.png" alt="deployed website with tablet view">
 
 
 ## URLs:
